@@ -1,10 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * ExpressionEngine Textarea Fieldtype Class
+ * ExpressionEngine JP Category Select Class
  *
  * @package		Category Select
  * @category	Fieldtypes
  * @author		Joe Paravisini
+ * @license		http://creativecommons.org/licenses/by/3.0/
  * @link		http://joeparavisini.com
  */
 
