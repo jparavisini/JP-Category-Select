@@ -13,7 +13,7 @@ class Jp_category_select_ft extends EE_Fieldtype {
 	
 	var $info = array(
 			'name'		=>	'JP Category Select',
-			'version'	=>	'1.1.1'
+			'version'	=>	'1.1.2'
 			);
 	var $catArray = array();
 	var $in_categories = array();
@@ -77,9 +77,9 @@ $(document).ready(function() {
 		//Load the Category API
 		$this->EE->load->library('api');
 		$this->EE->api->instantiate('channel_categories');
-
-		//Define wich category group we are grabbing.
-		$category_group_id = $this->settings['category_group_id'];
+		// 
+	        $this->settings = unserialize(base64_decode($this->settings['field_settings']));        
+		$category_group_id = $this->settings['category_group_id']; 		//Define wich category group we are grabbing.
 		
 		
 		//Grab all of the categories from the api and drop them into a class var
