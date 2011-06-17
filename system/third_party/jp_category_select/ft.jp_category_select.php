@@ -49,7 +49,7 @@ class Jp_category_select_ft extends EE_Fieldtype {
 <script type="text/javascript">
 $(document).ready(function() {
 			
-	$(\'#tree\').checkboxTree({
+	$(\'.tree\').checkboxTree({
 		
    	initializeChecked: \'expanded\',
     initializeUnchecked: \'collapsed\',
@@ -137,7 +137,7 @@ $(document).ready(function() {
 					$has_children = TRUE;
 				
 					if ($i==1) {
-						$r .= '<ul id="tree"><li>';
+						$r .= '<ul class="tree"><li>';
 						} else {
 							$r .= '<ul>';
 						}
