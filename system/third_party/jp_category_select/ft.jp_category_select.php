@@ -13,7 +13,7 @@ class Jp_category_select_ft extends EE_Fieldtype {
 	
 	var $info = array(
 			'name'		=>	'JP Category Select',
-			'version'	=>	'1.1'
+			'version'	=>	'1.1.1'
 			);
 	var $catArray = array();
 	var $in_categories = array();
