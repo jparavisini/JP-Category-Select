@@ -38,7 +38,7 @@ class Jp_category_select_ft extends EE_Fieldtype {
 
 	// --------------------------------------------------------------------
 
-	function display_field()
+	function display_field($data)
 	{
 		$this->EE->cp->add_to_head('<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.3/jquery-ui.min.js"></script>');
 		$this->EE->cp->add_to_head('<link rel="stylesheet" type="text/css" href="'.$this->_theme_url().'css/jquery.checkboxtree.css">');
