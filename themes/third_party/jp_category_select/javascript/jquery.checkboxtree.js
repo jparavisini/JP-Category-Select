@@ -486,7 +486,7 @@
      */
     function uncheckDescendants(li, options)
     {
-        li.find('input').attr('checked', '');
+        li.find('input').removeAttr('checked');
     }
 
 })(jQuery);
